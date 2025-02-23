@@ -77,7 +77,7 @@ input::placeholder {
   -moz-appearance: none;
 }
 
-.other-information input[type="radio"] {
+.other-information input {
   margin: 0;
   font-family: inherit;
   font-size: inherit;
