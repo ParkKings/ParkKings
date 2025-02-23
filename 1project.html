@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+  </head>
+  <body>
+    <h1 id="title">ParKings Survey Form</h1>
+    <p id="description">Thank you for taking the time to help us improve our platform</p>
+    <form id="survey-form" action="information.html" method="POST">
+      <div class="personal-information">
+        <label id="name-label" for="name">Name</label>
+        <input id="name" type="text" placeholder="Enter you name" required>
+        <label id="email-label" for="email">Email</label>
+        <input id="email" type="email" placeholder="Enter your email" required>
+        <label id="number-label" for="age">Age (optional)</label>
+        <input id="number" type="number" min="13" max="120" placeholder="Enter your age">
+        <p>Which option best describes your current role?</p>
+        <select id="dropdown" required>
+          <option disabled selected value="">Select your curent role</option>
+          <option value="student">Student</option>
+          <option value="full-time-job">Full time job</option>
+          <option value="prefer-not-to-say">Prefer not to say</option>
+          <option value="other">Other</option>
+        </select>
+      </div>
+      <p>Would you recommend ParKings to a friend?</p>
+      <div class="other-information">
+        <label for="option1">
+          <input type="radio" name="recommend-to-a-friend" id="option1" value="definetely" checked> Definitely
+        </label>
+        <label for="option2">
+          <input type="radio" name="recommend-to-a-friend" id="option2" value="definetely"> Maybe
+        </label>
+        <label for="option3">
+          <input type="radio" name="recommend-to-a-friend" id="option3" value="definetely"> Not sure
+        </label>
+        <p class="feature">What is your favorite feature of ParKings?</p>
+        <select name="favorite-feature" id="most-liked-feature">
+          <option value="" disabled selected>Select an option</option>
+          <option value="challenges">Challenges</option>
+          <option value="projects">Projects</option>
+          <option value="community">Community</option>
+        </select>
+        <p class="improvement">What would you like to see improved? <span class="disclaimer">(Check all that apply)</span></p>
+          <div class="improvement-options">
+            <label>
+              <input type="checkbox" name="prefer" value="front-end-projects"> Front-end Projects
+            </label>
+            <label>
+              <input type="checkbox" name="prefer" value="back-end-projects"> Back-end Projects
+            </label>
+            <label>
+              <input type="checkbox" name="prefer" value="data-visualization"> Data Visualization
+            </label>
+            <label>
+              <input type="checkbox" name="prefer" value="challenges"> Challenges
+            </label>
+            <label>
+              <input type="checkbox" name="prefer" value="Videos"> Videos
+            </label>
+            <label>
+              <input type="checkbox" name="prefer" value="additional-courses"> Additional Courses
+            </label>
+          </div>
+          <div class="suggestions">
+            <p>Any comments or suggestions?</p>
+            <textarea name="suggestions-coments-form" rows="5" placeholder="Enter your comment here" id="comments-suggestions"></textarea>
+          </div>
+      </div>
+      <button class="submit-button" type="submit">Submit</button>
+    </form>
+  </body>
+</html>
